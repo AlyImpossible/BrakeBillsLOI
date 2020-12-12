@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apply to Brakebills</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Brakebills University</h1>
+          <p id="description" class="description text-center">Thank you for your interest in Brakebills University. Please fill out this form and a member of our admissions team will contact you shortly. 
+          </p>
+      </header>
+
+
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+                 type="text"
+                 name="name"
+                 id="name"
+                 class="form-control"
+                 placeholder="Enter your name"
+                 required
+                 />
+        </div>
+          <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+            <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your Email"
+                  required
+                   />
+        </div>
+        <div class="form-group">    
+          <label id="number-label" for="number">Age<span class="clue">(Optional)</span></label>
+          <input
+                 type="number"
+                 name="age"
+                 id="number"
+                 min="10"
+                 max="99"
+                 class="form-control"
+                 placeholder="Age"
+                 />
+        </div>
+        <div class="form-group">
+          <p> Which Option Best Describes Your Current Education Level?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select Current Level</option>
+            <option value="student">Current High School Student</option>
+            <option value="job">High School Graduate</option>
+            <option value="learner">Transfer Student</option>
+            <option value="preferNo">College Graduate</option>
+            <option value="hedge">Hedge Witch</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Do you have any magicians in your family?</p>
+          <label>
+            <input
+                   name="user-answer"
+                   value="yes"
+                   type="radio"
+                   class="input-radio"
+                   checked
+                   />
+          Yes</label>
+          <label>
+            <input
+                   name="user-answer"
+                   value="No"
+                   type="radio"
+                   class="input-radio"
+                   />
+            No</label>
+          <label>
+            <input
+                   name="user-answer"
+                   value="not-sure"
+                   type="radio"
+                   class="input-radio"
+                   />
+            Not Sure</label>
+        </div>
+        <div class="form=group">
+          <p>How did you find out about Brakebills University?</p>
+          <select id="find-out" name="find-out" class="form-control" required>
+            <option disabled selected value>Select An Option</option>
+            <option value="alumni">I have family members who are alumni</option>
+            <option value="hedge">I am a member of a hedge witch association</option>
+            <option value="rumor">I heard a rumor</option>
+            <option value="centaurs">The Centaurs sent me</option>
+            <option value="accident">I accidentally found this website</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p span class="clue">What Would You Like To Study at Brakebills? (Check all that apply)</span></p>
+      
+      <label> 
+        <input 
+               name="study"
+               value="alchemy"
+               type="checkbox"
+               class="input-checkbox"
+               />Alchemy</label>
+      <label>
+      <input
+             name="study"
+             value="original-spell-crafting"
+             type="checkbox"
+             class="input-checkbox"
+             />Original Spell-Crafting</label>
+      <label>
+        <input
+               name="study"
+               value="phosphoromancy"
+               type="checkbox"
+               class="input-checkbox"
+               />Phosphoromancy</label>
+      <label>
+        <input
+               name="study"
+               value="magical-history"
+               type="checkbox"
+               class="input-checkbox"
+               />Magical History</label>
+      <label>
+        <input
+               name="study"
+               value="circumstantial-prognostication"
+               type="checkbox"
+               class="input-checkbox"
+               />Circumstantial Prognostication</label>
+      <label>
+        <input
+               name="study"
+               value="dead-languages"
+               type="checkbox"
+               class="input-checkbox"
+               />Dead Languages</label>
+      <label>
+        <input
+               name="study"
+               value="healing-magic"
+               type="checkbox"
+               class="input-checkbox"
+               />Healing Magic</label>
+      <label>
+        <input
+               name="study"
+               value="herbology"
+               type="checkbox"
+               class="input-checkbox"
+               />Herbology</label>
+      <label>
+        <input 
+               name="study
+               value="astronomy"
+               type="checkbox"
+               class="input-checkbox"
+               />Astronomy</label>
+      <label>
+        <input
+               name="study"
+               value="battle-magic"
+               type="checkbox"
+               class="input-checkbox"
+               />Battle Magic</label>
+        <label>
+          <input
+                 name="study"
+                 value="magical-creatures"
+                 type="checkbox"
+                 class="input-checkbox"
+                 />Magical Creatures</label>
+        </div>
+        <div class="form-group">
+             <p>Please describe yourself in a single sentence, using your favorite dead language:</p>
+      <textarea
+               id="comments"
+               class="input-textarea"
+               name="comment"
+               placeholder="Enter Your Description Here..."></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button btn btn-info">Submit</button>
+        </div>
+      </form>
+    </div>  
+</html>
